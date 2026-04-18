@@ -387,7 +387,9 @@ kubectl get constrainttemplates
 # Verify constraint is active
 kubectl get constraints
 
-# Should show: K8sRequiredLabels/ns-must-have-gk
+# # Expected output (TOTAL-VIOLATIONS may vary):
+# NAME              ENFORCEMENT-ACTION   TOTAL-VIOLATIONS
+# ns-must-have-gk                        8
 ```
 
 ### Step 2: Test the Complete Workflow
